@@ -1,0 +1,72 @@
+ .dot {
+    height: 20px;
+    width: 20px;
+    background-color: #38bced;
+    border-radius:50%;
+    top: 10px;
+    left : 10px;
+    z-index: 1;
+    position:absolute;
+  }
+
+  .dot2 {
+    height: 40px;
+    width: 40px;
+    background-color: #1c86ee;
+    border-radius: 50%;
+    z-index: -1;
+    position:absolute;
+    opacity: 0.5;
+    animation:  darkDot 2s infinite alternate-reverse;
+    
+  } 
+@keyframes darkDot {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.75;
+  }
+  50% {
+    transform: scale(0.75);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0.75;
+  }
+}
+/* @keyframes darkDot
+  0%
+    width: 50%
+    background-color: #38bced
+    border-radius: 50px
+    opacity: 1
+  100%
+    width: 100%
+    background-color: #1c86ee
+    border-radius: 50px
+    opacity: 0.75
+
+.map__home-icon
+  animation: darkDot 1s ease-out infinite */
+
+  
+/* 
+@keyframes darkDot1 {
+  0% {  
+    width: 20px;
+    transition: all 0.4s ease-in-out;
+   border-radius: 50px;
+   opacity: 1;}
+100%
+ { width: 40px;
+  background-color: #1c86ee;
+  transition: all 0.4s ease-in-out;
+  border-radius: 50px;
+  opacity: 0.75;}
+}
+
+
+.map__home-icon {
+  animation: darkDot1 1s ease-out infinite;
+  
+} */
